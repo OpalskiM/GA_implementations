@@ -1,0 +1,34 @@
+#memory-based GA (MGA)
+
+#Selection- roulette wheel
+
+function pselection(prob::Vector{Float64}, N::Int)
+    cp = cumsum(prob)
+    selected = Array{Int}(undef, N)
+    for i in 1:N
+        j = 1
+        r = rand()
+        while cp[j] < r
+            j += 1
+        end
+        selected[i] = j
+    end
+    return selected
+end
+function roulette(fitness::Vector{Float64}, N::Int)
+    prob = fitness./sum(fitness)
+    return pselection(prob, N)
+end
+
+#Mutation- Mutation operator is applied by the probability
+#of Pm to each gene of the offspring generation. In
+#this paper, the value of the mutated gene is replaced by a
+#random value from the possible range.
+
+function insertion(recombinant::T) where {T <: Vector}
+    l = length(recombinant)
+    from, to = rand(1:l, 2)
+    val = recombinant[from]
+    deleteat!(recombinant, from)
+    return insert!(recombinant, to, val)
+end
