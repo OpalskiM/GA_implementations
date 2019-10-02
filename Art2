@@ -11,8 +11,6 @@
 #PopulationSize = 200
 #Max no. of generations = 200
 
-using Evolutionary 
-
 #Mutation   
 function flip(recombinant::Vector{Bool})
     s = length(recombinant)
