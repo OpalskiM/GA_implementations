@@ -1,0 +1,8 @@
+Cześć,
+
+Na githubie (https://github.com/OpalskiM/RoadsConstructionOpt/blob/master/src/Other.jl) wrzuciłem te inne operatory algorytmu genetycznego (z innych artykułów, w większości właśnie są dość proste albo wręcz pomijane)
+Za ich pomocą można zmieniać funkcję optymalizacyjną ("optimize!"), na dole jest wrzucony prosty przykład. Oryginał tej funkcji dostępny w Evolutionary functions.jl (zmieniają się tylko poszczególne operatory) reszta funkcji się nie zmienia i jest dostępna do symulacji.
+Jak rozumiem teraz można jakoś zoptymalizować te funkcjea a potem tak jak pisał Bartosz zrobić benchmark tych algorytmów i znaleźć najlepszy.
+
+Pozdrawiam
+Marcin
