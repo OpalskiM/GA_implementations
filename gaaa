@@ -1,0 +1,8 @@
+Finally, to optimize the way how the road network should be reshaped, 
+which roads need to be removed from network, proper optimization algorithm need to be selected. 
+However, the simulation generated data sets are non-trivial and many traditional optimizing approaches may
+ not find optimal solution. Genetic algorithm has been proven especially effective in such scenarios \cite{Pinninghoff}
+ \cite{Krol}. 
+It is a heuristic-based approach to find the best possible solutions. 
+Idea of GA stems from the natural selection theory (Beasley et al, \cite{beas}) and countless studies 
+such as Jong \cite{jong} and Tat and Tao \cite{TAT} have proven its efficiency in planning and optimization problems.
